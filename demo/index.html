@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link media="only screen"
+          href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Open+Sans+Condensed:300,700'
+          type='text/css' rel='stylesheet'/>
+    <link media="screen" rel="stylesheet" type="text/css" href="css/main.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="css/whig.css">
+    <script type="text/javascript" src="../src/whig.js"></script>
+    <title>Whig JS Editor</title>
+</head>
+<body>
+<div id="content_wrap">
+    <form>
+        <fieldset>
+            <label for="whig_light">Whig Light Theme</label>
+            <textarea name="whig_light" id="whig_light" class="whig-field" data-css-path="css/whig.css"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="whig_dark">Whig Dark Theme</label>
+            <textarea name="whig_dark" id="whig_dark" class="whig-field dark" data-css-path="css/whig.css"></textarea>
+        </fieldset>
+        <input type="submit" value="View Results"/>
+    </form>
+    <div id="output"></div>
+</div>
+<script type="text/javascript">
+    (function (window, document) {
+        'use strict';
+
+        var form = document.querySelector('form'),
+                output = document.querySelector('#output');
+
+        if (form !== null && output !== null) {
+            form.onsubmit = function (event) {
+                event.preventDefault();
+
+                output.innerHTML = '<div><h2>Light Theme Output</h2>' + form.whig_light.value + '</div>' +
+                        '<div><h2>Dark Theme Output</h2>' + form.whig_dark.value + '</div>';
+            }
+        }
+    }(window, document));
+</script>
+</body>
+</html>

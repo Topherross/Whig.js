@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*--- BOF ---*/
+
+/*--- LIGHT THEME (AND COMMON) --*/
+
+.whig-wrapper {
+    overflow: auto;
+    background: rgb(229, 229, 229);
+    padding: 10px;
+}
+
+.whig-wrapper iframe {
+    background: rgb(205, 205, 205);
+    width: 100%;
+    min-height: 200px;
+    color: rgb(44, 44, 44);
+    font: 400 13px "Arial", sans-serif;
+}
+
+body.whig-body {
+    color: rgb(44, 44, 44);
+    font: 400 13px "Arial", sans-serif;
+}
+
+.whig-toolbar {
+    padding: 10px;
+    overflow: auto;
+    background: rgb(195, 195, 195);
+}
+
+.whig-wrapper button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none 0;
+    padding: 0;
+    margin: 0 20px 0 0;
+    float: left;
+    width: auto;
+    height: auto;
+    color: rgb(63, 63, 63);
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.whig-wrapper button:last-child {
+    margin: 0;
+}
+
+.whig-wrapper .icon {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 6px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.whig-wrapper .icon.bold {
+
+}
+
+.whig-wrapper .icon.underline {
+
+}
+
+.whig-wrapper .icon.italicize {
+
+}
+
+.whig-wrapper .icon.ul {
+
+}
+
+.whig-wrapper .icon.ol {
+
+}
+
+.whig-wrapper .icon.link {
+
+}
+
+.whig-wrapper .icon.unlink {
+
+}
+
+.whig-wrapper .icon.image {
+    content: 'img';
+}
+
+/*--- DARK THEME --*/
+
+.whig-wrapper.dark {
+    background: rgb(55, 55, 55);
+}
+
+.whig-wrapper.dark iframe {
+    background: rgb(45, 45, 45);
+}
+
+body.whig-body.dark {
+    color: rgb(220, 220, 220);
+}
+
+.whig-wrapper.dark .whig-toolbar {
+    background: rgb(36, 36, 36);
+}
+
+.whig-wrapper.dark button {
+    background: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+}
+
+/*--- EOF ---*/
