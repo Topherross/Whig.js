@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link media="only screen"
+          href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Open+Sans+Condensed:300,700'
+          type='text/css' rel='stylesheet'/>
+    <link media="screen" rel="stylesheet" type="text/css" href="css/main.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="src/whig.css">
+    <script type="text/javascript" src="src/whig.js"></script>
+    <title>Whig JS Editor</title>
+</head>
+<body>
+<div id="content_wrap">
+    <h1>
+        <label for="theme_toggle" class="">Toggle Theme <input type="checkbox" id="theme_toggle"/></label>
+        Whig.js
+    </h1>
+
+    <form class="page-state default-state" data-state="form">
+        <fieldset>
+            <label for="whig_input" id="theme_display">Light Theme</label>
+            <textarea name="whig_input" id="whig_input" class="whig-field" data-css-path="src/whig.css"
+                      data-init-callback="initToggle"></textarea>
+        </fieldset>
+        <input type="submit" value="View Results"/>
+    </form>
+    <div id="output_wrap" class="page-state" data-state="output">
+        <div id="output"></div>
+        <button type="button" id="back_button">&#10094; Back</button>
+    </div>
+</div>
+<script type="text/javascript" src="js/demo.js"></script>
+</body>
+</html>

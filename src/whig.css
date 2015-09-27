@@ -18,6 +18,7 @@
     min-height: 200px;
     color: rgb(44, 44, 44);
     font: 400 13px "Arial", sans-serif;
+    resize: vertical;
 }
 
 body.whig-body {
@@ -57,7 +58,7 @@ body.whig-body {
     height: 24px;
     text-indent: -999px;
     overflow: hidden;
-    background: transparent url('../img/whig-sprite.png') no-repeat 0 0;
+    background: transparent url('img/whig-sprite.png') no-repeat 0 0;
 }
 
 .whig-wrapper .icon.bold {
@@ -147,8 +148,8 @@ body.whig-body {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 320px;
-    height: 220px;
+    width: 400px;
+    height: 80%;
     margin: auto;
     padding: 20px;
     background: rgb(255, 255, 255);
@@ -204,6 +205,7 @@ p.help-text {
     font: 300 10px 'Arial', sans-serif;
     color: rgb(140, 140, 140);
     margin: -8px 0 16px 0;
+    clear: both;
 }
 
 #whig_dialog_content input[type='radio'] {
@@ -267,7 +269,7 @@ p.help-text {
 
 #image_link_toggle {
     float: right;
-    margin: 6px 0 0;
+    margin: 2px 0 0;
 }
 
 #image_link_url_wrap {
@@ -276,6 +278,8 @@ p.help-text {
 
 #image_link_url_wrap.visible {
     display: block;
+    clear: both;
+    padding: 8px 0 0;
 }
 
 #whig_button_wrap {
@@ -438,7 +442,8 @@ body.whig-body.dark {
     color: rgb(209, 209, 209);
 }
 
-.whig-wrapper.dark #image_link_wrap {
+.whig-wrapper.dark #image_link_wrap,
+.whig-wrapper.dark #whig_dialog_content .float_wrap {
     background: rgba(210, 210, 210, 0.1);
 }
 

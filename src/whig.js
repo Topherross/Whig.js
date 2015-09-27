@@ -100,14 +100,14 @@
             '</label>' +
             '<p class="help-text">Use numbers for pixels, use %, or leave blank for 0.</p>' +
             '</fieldset>' +
-            '<div id="image_link_wrap">' +
-            '<label for="image_link_toggle">Make Image a Link</label>' +
-            '<input type="checkbox" id="image_link_toggle" name="image_link_toggle">' +
+            '<fieldset class="float_wrap" id="image_link_wrap">' +
+            '<legend><input type="checkbox" id="image_link_toggle" name="image_link_toggle">' +
+            'Make Image a Link</legend>' +
             '<div id="image_link_url_wrap">' +
             '<label for="image_link_url">Link URL</label>' +
             '<input type="text" id="image_link_url" name="image_link_url">' +
             '</div>' +
-            '</div>' +
+            '</fieldset>' +
             '</div>';
     }
 
